@@ -28,3 +28,7 @@ for d in data:
 print('一共有', len(good),' 筆留言提到good')
 print('第一筆:', good[0])
 
+good = [d for d in data if 'good' in d] #快寫法
+print('一共有', len(good),' 筆留言提到good')
+print('第一筆:', good[0])
+bad = ['bad' in d for d in data]
